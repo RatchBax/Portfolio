@@ -1,0 +1,70 @@
+body {
+    background-color: #30323D;
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    background-color: #4D5061;
+    width: 38%;
+    height: auto;
+    margin: auto;
+    margin-top: 17%;
+    border:none;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 22px;
+    padding-bottom: 1%;
+}
+
+fieldset img {
+    width: 35%;
+    margin-top: 2%;
+    margin-right: 4%;
+    border-radius: 40%;
+}
+
+fieldset div {
+    display: block;
+}
+
+
+div h1 {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: FiraCodeRegular;
+    color: white;
+}
+
+div p {
+    font-size: 18px;
+    font-family: FiraCodeRegular;
+    color: white;
+
+}
+
+a {
+    background-color: #5C80BC;
+    border: 2px solid #4D5061;
+    border-radius: 20px;
+    padding: 4%;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 4%;
+}
+
+a:hover {
+    background-color:#222536;
+    border: 2px solid #5C80BC;
+    transition: background-color 0.3s;
+}
+
+@font-face {
+    font-family: FiraCodeRegular;
+    src: url(../ttf/FiraCode-Regular.ttf);
+}
+
+@font-face {
+    font-family: FiraCodeBold;
+    src: url(../ttf/FiraCode-Bold.ttf);
+    font-weight: bold;
+}
