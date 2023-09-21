@@ -69,7 +69,8 @@ div {
 }
 
 a {
-    margin: 1%;
+    transition: background-color 0.3s;
+    margin-right: 2%;
     background-color: #5C80BC;
     border: 2px solid #4D5061;
     border-radius: 20px;
@@ -86,7 +87,47 @@ a:hover {
 }
 
 
+/*PAGE PROJET*/
+#projetFieldset {
+    display: flex;
+    border: none;
+    margin-left: 0%;
+}
 
+.projets {
+    width: 28%;
+    height: auto;
+    margin: 1% 2% 1% 0.5%;
+    
+}
+
+.projets h1 {
+    font-size: 2vw;
+    line-height: 130%;
+}
+
+.projets img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projets a {
+    transition: background-color 0.3s;
+    background-color: #5C80BC;
+    border: 2px solid #4D5061;
+    border-radius: 20px;
+    padding: 4%;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 4%;
+}
+
+.projets a:hover {
+    background-color:#222536;
+    border: 2px solid #5C80BC;
+    transition: background-color 0.3s;
+}
 @font-face {
     font-family: FiraCodeRegular;
     src: url(../ttf/FiraCode-Regular.ttf);
