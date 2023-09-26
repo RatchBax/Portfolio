@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Echivard Corentin - Portfolio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <fieldset id="AccueilTitle">
+        <img src="../../img/LogoExemple.jpg" alt="Logo photo de profil">
+        <div>
+            <h1>PORTFOLIO DE <br>CORENTIN ECHIVARD--LIZASO</h1>
+            <div style="display: flex;">
+                <a href="../pageProjet.html">Retour</a>
+            </div>
+        </div>
+    </fieldset>
+    <figure id="intro">
+        <h1>Projet d'une IA pour un jeu de dames</h1>
+    </figure>
+    <figure>
+        <h1>Présentation du projet</h1>
+        <p>
+            Pour ce projet, je travaillais en équipe de 3 personnes. Pour ce projet, nous avons réalisé un mini-jeu de
+            dames sur console.
+            Cependant, dans ce jeu de dames, nous avons créé une IA qui au fur et à mesure des parties, apprenait à mieux
+            jouer. Vous pouvez choisir entre
+            faire s'entraîner l'IA ou jouer contre elle.
+        </p>
+    </figure>
+    <figure>
+        <h1>Galerie d'images</h1>
+        <div class="description">
+            <!--Faire en sorte que les images soient cliquable pour les afficher en grand-->
+            <img src="../../img/SAE_IA_Menu_Principal.png" alt="SAE_IA_Menu_Principal.png" style="width: 40%;">
+            <img src="../../img/SAE_IA_Les_règles.png" alt="SAE_IA_Les_règles.png" style="width: 40%;">
+        </div>
+        <br>
+        <div class="description">
+            <img src="../../img/SAE_IA_En_Partie_2.png" alt="SAE_IA_En_Partie_2.png" style="width: 30%;">
+            <img src="../../img/SAE_IA_En_Partie.png" alt="SAE_IA_En_Partie.png" style="width: 25%;">
+        </div>
+    </figure>
+    <figure>
+        <h1>Les menus du jeu</h1>
+        <div class="description">
+            <div>
+                <p>
+                    Avant de développer et d'implémenter l'IA dans notre jeu, il nous fallait le jeu.<br>
+                    La première partie de ce projet était donc de développer le jeu.
+                </p>
+                <p>
+                    Pour le développement du jeu, nous avons décidé de le développer sans interface graphique, le jeu
+                    fonctionne donc
+                    directement dans la console.<br>
+                    Tout d'abord, quand vous lancez le jeu, le menu principal s'affiche. Plusieurs choix vous sont donc
+                    proposé.
+                </p>
+                <ul>
+                    <li>Lancer une nouvelle partie</li>
+                    <li>Consulter les règles du jeu.</li>
+                </ul>
+                <p>
+                    Si vous décidez de consulter les règles du jeu, nous avons fait en sorte qu'elles restent affichées
+                    jusqu'à ce que vous entriez le mot "OK" dans la console.
+                    Cela permet à chacun de lire tranquillement les règles du jeu sans avoir à faire une course contre
+                    la montre.
+                </p>
+                <p>
+                    Si vous décidez de commencer une nouvelle partie, le programme vous demandera d'abord si vous voulez
+                    entraîner l'IA ou jouer contre l'IA.
+                    Le programme vous demandera ensuite la taille du plateau de jeu. Elle doit être comprise entre 3x3 et
+                    10x10.
+                </p>
+            </div>
+        </div>
+    </figure>
+    <figure>
+        <h1>En jeu</h1>
+        <div class="description">
+            
+            <div>
+                <p>
+                    L'interface en jeu reprend le même type d'interface que les menus principaux.
+                    <br>Sur cette interface, vous pouvez voir l'état du plateau actuel ainsi que la numérotation des
+                    cases.
+                    <br>
+                    Pour jouer un coup, le programme vous demande de rentrer un à un les coordonnées de votre pion (Vous
+                    jouer les pions blanc (B) ).<br>
+                    Ensuite, le programme vous demandera quel coup vous souhaitez réaliser.
+                </p>
+                <ul>
+                    <li>Avancer tout droit</li>
+                    <li>Manger le pion adverse sur votre gauche</li>
+                    <li>Manger le pion adverse sur votre droite</li>
+                </ul>
+                <p>
+                    Une fois votre coup effectué, c'est au tour de l'IA de jouer.
+                </p>
+            </div>
+        </div>
+    </figure>
+    <figure>
+        <h1>Le fonctionnement de l'IA</h1>
+        <div class="description">
+            <div>
+                <p>
+                    Pour effectuer son coup, l'IA peut réfléchir de deux façons différentes.
+                </p>
+                <ul>
+                    <li>Soit elle effectue un coup au hasard parmi les choix disponibles</li>
+                    <li>
+                        Soit elle effectue un coup qui possède le grand nombre de réussite
+                        <ul>
+                            <li>
+                                Pour chaque coup qui a mené à la victoire de l'IA, l'IA l'enregistre dans un tableau avec un poids.
+                                <br>Plus le poids du coup est élevé, plus l'IA risque de le jouer.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    À la fin de la partie, si l'IA gagne, elle enregistre dans son tableau les coups qu'elle a effectués. Si les coups sont déjà présents dans le tableau, 
+                    l'IA lui rajoute 1 sur son coup. Si l'IA perd, elle enlève 1 aux coups qui on était joué et qui sont dans son tableau et n'en rajoute pas dans son tableau.
+                </p>
+            </div>
+        </div>
+    </figure>
+    <figure>
+        <h1>L'organisation en équipe</h1>
+        <p>
+            Pour ce projet, nous étions en équipe de 3. La répartition était la suivante :
+        </p>
+        <ul>
+            <li>
+                Développement du jeu
+                <ul>
+                    <li>Codage des interfaces textuelles</li>
+                    <li>Réalisation des différents menus</li>
+                    <li>Codage du jeu (comportement, conditions de victoire)</li>
+                    <li>Codage des fonctions de jeux pour le joueur</li>
+                </ul>
+            </li>
+            <li>
+                Développement de l'IA
+                <ul>
+                    <li>Fonctions de sélection des coups à effectuer (en aléatoire ou par les poids)</li>
+                    <li>Fonctions de mises à jour de l'interface</li>
+                    <li>Enregistrement des coups et mise à jour des coups enregistrés</li>
+                </ul>
+            </li>
+            <li>
+                Entraînement de l'IA
+                <ul>
+                    <li>Simulation de partie contre elle-même</li>
+                </ul>
+            </li>
+        </ul>
+    </figure>
+    <figure>
+        <h1>Les compétences utilisées</h1>
+        <p>
+            Pour ce projet, nous avons utilisé les compétences suivantes :
+        </p>
+        <ul>
+            <li>Développement en langage C++</li>
+            <li>Développement d'une IA simple</li>
+            <li>Gestion des interfaces textuelles</li>
+        </ul>
+    </figure>
+</body>
