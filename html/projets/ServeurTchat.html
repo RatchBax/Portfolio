@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Echivard Corentin - Portfolio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <fieldset id="AccueilTitle">
+        <img src="../../img/LogoExemple.jpg" alt="Logo photo de profil">
+        <div>
+            <h1>PORTFOLIO DE <br>CORENTIN ECHIVARD--LIZASO</h1>
+            <div style="display: flex;">
+                <a href="../pageProjet.html">Retour</a>
+            </div>
+        </div>
+    </fieldset>
+    <figure id="intro">
+        <h1>Projet de serveur de tchat local</h1>
+    </figure>
+    <figure>
+        <h1>Présentation du projet</h1>
+        <p>
+            Ce projet consiste en la création de deux programmes en C capable de communiquer entre eux sur le réseau local.
+            Pour cela, nous avons dû développer deux programmes. Un programme client et un programme serveur.
+            Pour ce projet, nous étions en équipe de trois personnes.
+        </p>
+    </figure>
+    <figure>
+        <h1>Le programme client</h1>
+        <div class="description">
+            <!--Faire en sorte que les images soient cliquable pour les afficher en grand-->
+            <img src="../../img/Client_connecté.png" alt="Client_connecté.png" style="width: 40%;">
+            <div>
+                <p>
+                    Tout d'abord, pour pouvoir communiquer avec le serveur en réseau local. Nous devons démarrer le programme client.<br>
+                    Quand le programme, le programme client va d'abord effectuer la configuration nécessaire pour se connecter au serveur. <br>
+                    Une fois le socket de communication créée, le programme client est prêt à se connecter au serveur. Il ne manque plus que l'adresse IP du serveur.
+                    Le choix de l'adresse IP nous permet d'avoir plusieurs serveurs sur le réseau local.
+                    Une fois l'adresse IP renseignée, le programme client essaie de s'y connecter. Si la connexion échoue, un message apparaît sur la console.
+                    <br><br>
+                    Une fois toutes ces étapes de démarrage effectués, le programme est connecté au serveur est prêt à envoyer les messages.
+                </p>
+            </div>
+        </div>
+    </figure>
+    <figure>
+        <h1>Le programme serveur</h1>
+        <div class="description">
+            <!--Faire en sorte que les images soient cliquable pour les afficher en grand-->
+            <img src="../../img/Serveur_connecté.png" alt="Serveur_connecté.png" style="width: 40%;">
+            <div>
+                <p>
+                    Du côté du programme serveur, nous n'avons pas grand-chose à faire.
+                    Une fois que nous l'avons démarré, le serveur attendra les connexions des clients.
+                    <br><br>
+                    À chaque nouvelle connexion de client, le serveur affichera un message sur la console.
+                    Sur ce serveur, plusieurs clients peuvent se connecter et discuter entre eux. À chaque message envoyé sur le serveur, le serveur le renvoi aux autres clients connecté
+                    <br><br>
+                    Sur l'exemple, nous avons qu'un seul client de connecté au serveur. Ce client a envoyé un message au serveur que nous pouvons voir sur la console du serveur.<br>
+                    Nous pouvons voir le message envoyé directement depuis la console du client.
+                </p>
+            </div>
+        </div>
+    </figure>
+    <figure>
+        <h1>L'organisation en équipe</h1>
+        <p>
+            Pour ce projet, nous étions en équipe de 3. Nous nous sommes donc réparti les tâches de façon équitable que nous avions 
+            le plus vite possible.<br>
+            <br>
+            La répartition était la suivante :
+        </p>
+        <ul>
+            <li>
+                Développement du programme client
+                <ul>
+                    <li>Procédure de démarrage du programme client</li>
+                    <li>Connexion au serveur</li>
+                    <li>Envoie et réception des messages</li>
+                </ul>
+            </li>
+            <li>
+                Développement du serveur
+                <ul>
+                    <li>Procédure de démarrage du serveur</li>
+                    <li>Gestion des utilisateurs (connexion, envoie de message, déconnexion)</li>
+                    <li>Renvoi des messages aux autres utilisateurs connectés</li>
+                    <li>Gestion des erreurs</li>
+                </ul>
+            </li>
+            <li>
+                Phase de test sur réseau local
+                <ul>
+                    <li>Déploiement sur machine virtuelle connectée entre elles par un réseau local</li>
+                    <li>Test des programmes et ajustements si nécessaire</li>
+                </ul>
+            </li>
+        </ul>
+    </figure>
+    <figure>
+        <h1>Les compétences utilisées</h1>
+        <p>
+            Pour ce projet, nous avons utilisé les compétences suivantes :
+        </p>
+        <ul>
+            <li>Réseau et protocole de communication</li>
+            <li>
+                Développement en langage C
+                <ul>
+                    <li>
+                        Utilisation de Threads
+                        <ul>
+                            <li>
+                                Fonctionnement de plusieurs parties du programme en simultanée nous permettant ainsi de faire recevoir et envoyer des messages en même temps 
+                                ainsi que de connecter plusieurs clients au serveur
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Développement dans un environnement Ubuntu sur machine virtuel.</li>
+        </ul>
+    </figure>
+</body>
