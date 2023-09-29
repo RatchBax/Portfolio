@@ -17,11 +17,11 @@ fieldset {
 }
 
 fieldset img {
-    width: 35%;
+    width: 30%;
     height: 35%;
     margin-top: 2%;
     margin-right: 4%;
-    border-radius: 40%;
+    border-radius: 10%;
 }
 
 fieldset div {
